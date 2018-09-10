@@ -15,7 +15,6 @@ def softmax_cross_entropy(X, y, W, r):
 	return gradient of W and the total loss for optimisation and tuning.
 	"""
   
-  loss = 0.0
   gradient = np.zeros_like(W)
   n_X, d_X = X.shape
 
@@ -31,7 +30,7 @@ def softmax_cross_entropy(X, y, W, r):
   loss = np.sum(-np.log(np.sum(p*mask,axis=1)))
 
   # add regularisation
-  regu = r*(np.sum(np.diag(np.dot(W,W.T))))
+  regu = r*(np.sum(W*W))
   loss = loss/n_X + regu
 
   # calculate the gradient
