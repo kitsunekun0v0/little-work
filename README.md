@@ -7,7 +7,7 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 * [Softmax Cross-entropy](https://github.com/kitsunekun0v0/little-work/blob/master/ml/softmax.py) - Python function for finding loss and gradient of weight.
 * [Softmax + SGD](https://github.com/kitsunekun0v0/little-work/blob/master/ml/sgd_softmax.py) - Implementation of SGD. It can be a python function for training multinominal logistic regression. 
 * [Competitive Learning](https://github.com/kitsunekun0v0/little-work/blob/master/ml/simple_competitive_learning.m) - Competitive Learning is an unsupervised technique to cluster data. This is a Matlab implementation of a simple Competitive Learning. 
-![Alt text](_fig/cl.png?raw=true "Competitive Learning on digits")
+![Alt text](_fig/cl.png?raw=true | width=100)
 
 ## Computer Vision
 * [ViBe](https://github.com/kitsunekun0v0/little-work/blob/master/vibe.m) - ViBe is an background subtrauction algorithm for videos. Refer to the [original paper](https://orbi.uliege.be/bitstream/2268/145853/1/Barnich2011ViBe.pdf) for more algorithm details. Codes written in Matlab.
