@@ -12,3 +12,6 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 
 ## Computer Vision
 * [ViBe](https://github.com/kitsunekun0v0/little-work/blob/master/vibe.m) - ViBe is an background subtrauction algorithm for videos. Refer to the [original paper](https://orbi.uliege.be/bitstream/2268/145853/1/Barnich2011ViBe.pdf) for more algorithm details. Codes written in Matlab.
+
+** 3D Slicer**
+* A [3D Slicer module (.py)](https://github.com/kitsunekun0v0/little-work/blob/master/cv/ROISegmentation1.py) for segmentation with ROI annotation tool. The ROI annotation tool is used to define the boundary of ROI, and points in ROI are used as seeding points for segmentation.
