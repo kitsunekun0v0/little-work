@@ -7,6 +7,7 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 * [Softmax Cross-entropy](https://github.com/kitsunekun0v0/little-work/blob/master/ml/softmax.py) - Python function for finding loss and gradient of weight.
 * [Softmax + SGD](https://github.com/kitsunekun0v0/little-work/blob/master/ml/sgd_softmax.py) - Implementation of SGD. It can be a python function for training multinominal logistic regression. 
 * [Competitive Learning](https://github.com/kitsunekun0v0/little-work/blob/master/ml/simple_competitive_learning.m) - Competitive Learning is an unsupervised technique to cluster data. This is a Matlab implementation of a simple Competitive Learning. 
+
 ![img](https://github.com/kitsunekun0v0/little-work/blob/master/_fig/cl.png)
 
 ## Computer Vision
