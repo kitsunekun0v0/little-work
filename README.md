@@ -11,6 +11,9 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 
 ![img](https://github.com/kitsunekun0v0/little-work/blob/master/_fig/cl.png)
 
+**Neuron Network**
+* [Fully Connected Network (use Numpy)](ml/fc_NN) - A fully connected network that allows arbitrary number of hidden layers, with softmax loss function and ReLU activate function. Written in Python, only use Numpy. 
+
 ## Computer Vision
 * [Object Tracking with RGB-D videos](https://github.com/kitsunekun0v0/little-work/blob/master/gradProj) - Extended PSO tracker which is able to handle object occlusion, rescale and deformation. [Demo](https://drive.google.com/open?id=1VUYG8pg84g_cW8Nsm24fI5o-Ac1enzce)
 * [ViBe](https://github.com/kitsunekun0v0/little-work/blob/master/vibe.m) - ViBe is an background subtrauction algorithm for videos. Refer to the [original paper](https://orbi.uliege.be/bitstream/2268/145853/1/Barnich2011ViBe.pdf) for more algorithm details. Codes written in Matlab.
@@ -19,3 +22,5 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 
 **3D Slicer**
 * A [3D Slicer module (.py)](https://github.com/kitsunekun0v0/little-work/blob/master/cv/ROISegmentation1.py) for segmentation with ROI annotation tool. The ROI annotation tool is used to define the boundary of ROI, and points in ROI are used as seeding points for segmentation.
+
+![img](_fig/seg1.png) ![img](_fig/seg2.png)
