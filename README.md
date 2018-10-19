@@ -4,15 +4,18 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 ## Machine Learning
 * [Perceptron](https://github.com/kitsunekun0v0/little-work/blob/master/ml/averaged_perceptron_classifier.py) - Perceptron can be seen as a single layer neuron network. This is a averaged weight perceptron for multi-classes classification written in Python. 
 * [KNN](https://github.com/kitsunekun0v0/little-work/blob/master/ml/kNearestNeighbour.py) - A fully vectorised KNN classifier using L2 distance, written in Python. 
-* [Naive Bayes for Gaussian distribution](ml/gaussianNB.py) - Simple Naive Bayes classifier for Gaussian distribution input data. 
+* [Naive Bayes for Gaussian distributed data](ml/gaussianNB.py) - Simple Naive Bayes classifier for Gaussian distributed input data. 
 * [Softmax Cross-entropy](https://github.com/kitsunekun0v0/little-work/blob/master/ml/softmax.py) - Python function for finding loss and gradient of weight.
 * [Softmax + SGD](https://github.com/kitsunekun0v0/little-work/blob/master/ml/sgd_softmax.py) - Implementation of SGD. It can be a python function for training multinominal logistic regression. 
+
+**Neuron Network**
+* [Fully Connected Network (use Numpy)](ml/fc_NN) - A fully connected network that allows arbitrary number of hidden layers, with softmax loss function and ReLU activate function. Written in Python, only use Numpy. 
 * [Competitive Learning](https://github.com/kitsunekun0v0/little-work/blob/master/ml/simple_competitive_learning.m) - Competitive Learning is an unsupervised technique to cluster data. This is a Matlab implementation of a simple Competitive Learning. 
 
 ![img](https://github.com/kitsunekun0v0/little-work/blob/master/_fig/cl.png)
 
-**Neuron Network**
-* [Fully Connected Network (use Numpy)](ml/fc_NN) - A fully connected network that allows arbitrary number of hidden layers, with softmax loss function and ReLU activate function. Written in Python, only use Numpy. 
+**Reinforcement Learning**
+* [SARSA](ml/sarsa) - SARSA algorithm implemented in Matlab. Q table is replaced by simple one layer neuron network. 
 
 ## Computer Vision
 * [Object Tracking with RGB-D videos](https://github.com/kitsunekun0v0/little-work/blob/master/gradProj) - Extended PSO tracker which is able to handle object occlusion, rescale and deformation. [Demo](https://drive.google.com/open?id=1VUYG8pg84g_cW8Nsm24fI5o-Ac1enzce)
