@@ -1,8 +1,9 @@
-function [weight, learning_curve] = sarsa(n_episode,lr,eps,gamma)
+function [weight, learning_curve] = sarsa_lambda(n_episode,lr, eps, gamma, lambda)
 % n_episode: number of episode.
 % lr: learning rate.
 % gamma: reward decay.
 % eps: epsilon greedy.
+% lambda: trace decay.
 
 %% define the environment
 N = 7; M = 10; % # of row and column of the gridworld
@@ -21,7 +22,8 @@ max_step = 150; %maximum steps for each episode
 weight = rand(n_action,n_state); %initialise the weight
 learning_curve = zeros(1,n_episode);
 
-%% SARSA
+
+%% SARSA-lambda
 for episode = 1:n_episode
     S = [randi(N) randi(M)]; %randomly set a start state
     start_state = sub2ind([N,M],S(1),S(2));
@@ -29,6 +31,7 @@ for episode = 1:n_episode
     current_state = S; %set current state
     index = start_state;
     step = 0;
+    eligibility = zeros(n_action,n_state); %initialise eligibility
     
     %for each step in an episode
     while (index~=end_state) && (step<=max_step)
@@ -36,6 +39,8 @@ for episode = 1:n_episode
         input = state_matrix(:,index); %convert state into an input vector
         
         %compute Q value. Q value = exp(weight*input)/sum(exp(weight*input))
+        %same as softmax. input state is the input of a neuron network, Q
+        %value is the output of the neuron network. 
         q_target = exp(weight*input)/sum(exp(weight*input));
         %choose an action with epsilon greedy policy
         if rand>eps
@@ -53,21 +58,30 @@ for episode = 1:n_episode
         new_state(2) = (new_state(2)<1) + new_state(2)*((new_state(2)>0)&&(new_state(2)<=M)) + M*(new_state(2)>M);
         
         new_index = sub2ind([N,M],new_state(1),new_state(2));
-        
-        %update Q value
+         
         if step>1
+            % add 1 to passed state-action pair
+            eligibility(pre_action,pre_index) = eligibility(pre_action,pre_index)+1;
+            
+            %update Q value by updating weights of network.
             dw = (r - q_predict + gamma*q_target(action))*(action_vec_pre-pre_Q)*input_pre';
-            weight = weight + lr*dw;
+            weight = weight + lr*dw.*eligibility;
+            
+            %update eligibility
+            eligibility = eligibility*gamma*lambda;
+       
         end
         
         action_vector = zeros(n_action,1);
         action_vector(action,1) = 1;
         
         %store variables for next step
-        pre_Q = q_target; %p_Q = Q
+        pre_Q = q_target; 
+        pre_action = action;
+        pre_index = index;
         input_pre = input;
-        action_vec_pre = action_vector; %output_old = output
-        q_predict = q_target(action); %Q_old = Q(action)
+        action_vec_pre = action_vector; 
+        q_predict = q_target(action); 
         index = new_index;
         current_state(1) = new_state(1);
         current_state(2) = new_state(2);
