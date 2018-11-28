@@ -7,7 +7,7 @@ lambda = 0.8;
 n_repetition = 100;
 learning_curve = zeros(n_repetition,n_episode);
 for i = 1:n_repetition
-    [w,s] = sarsa(n_episode,lr,epsilon, gamma, lambda);
+    [w,s] = sarsa_lambda(n_episode,lr,epsilon, gamma, lambda);
     learning_curve(i,:) = s;
 end
 
