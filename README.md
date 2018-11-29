@@ -17,6 +17,7 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 **Reinforcement Learning**
 * [SARSA](ml/sarsa) - **SARSA algorithm** implemented in **Matlab**. Q table is replaced by simple one layer neuron network. 
 * [SARSA-Lambda](ml/sarsa_lambda) - **Sarsa-lambda** implemented in **Matlab**. Very similar to Sarsa except the additional egibility part in learning process. 
+* [Q Learning](ml/q_learning) - **Q Learning** implemented in **Matlab**. Q table is replaced by simple one layer neuron network. 
 
 ## Computer Vision
 * [Object Tracking with RGB-D videos](https://github.com/kitsunekun0v0/little-work/blob/master/gradProj) - Extended **PSO tracker** which is able to handle object occlusion, rescale and deformation. [Demo](https://drive.google.com/open?id=1VUYG8pg84g_cW8Nsm24fI5o-Ac1enzce)
