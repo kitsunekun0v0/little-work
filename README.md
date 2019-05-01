@@ -7,7 +7,7 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 * [Naive Bayes for Gaussian distributed data](ml/gaussianNB.py) - Simple **Naive Bayes classifier** for Gaussian distributed input data. Implemented in **Python**.
 * [Softmax Cross-entropy](ml/softmax.py) - **Python** function for finding loss and gradient of weight.
 * [Softmax + SGD](ml/sgd_softmax.py) - Implementation of **SGD**. It can be a **python function** for training **multinominal logistic regression**. 
-* [K means clustering](ml/k_means.py) - Fully vectorised implementation of **K means algorithm**. Written in **Matlab**. 
+* [K means clustering](ml/k_means.m) - Fully vectorised implementation of **K means algorithm**. Written in **Matlab**. 
 
 **Neuron Network**
 * [Fully Connected Network (use Numpy)](ml/fc_NN) - A **fully connected neuron network** that allows arbitrary number of hidden layers, with softmax loss function and ReLU activate function. Written in **Python**, only use **Numpy**. 
