@@ -21,13 +21,13 @@ Here is the collection of previous work and exercises I've done in ML and CV fie
 * [Q Learning](ml/q_learning) - **Q Learning** implemented in **Matlab**. Q table is replaced by simple one layer neuron network. 
 
 ## Computer Vision
-* [Object Tracking with RGB-D videos](gradProj) - Extended **PSO tracker** which is able to utilise depth information and improve the ability to handle object occlusion, rescale and deformation. [Demo](https://drive.google.com/open?id=1VUYG8pg84g_cW8Nsm24fI5o-Ac1enzce)
-* [Grow Cut Algorithm](cv/grow_cut_segmentation.py) - **Grow Cut** is an interactive segmentation algorithm which allows users to input some seeding points. It's wildly used for medical images. Details of algorithm are [here](https://www.graphicon.ru/oldgr/en/publications/text/gc2005vk.pdf).
+* [Object Tracking with RGB-D videos](gradProj) - Extended **PSO tracker** which is able to utilise depth information and improve the ability to handle object occlusion, rescale and deformation. Implemented in **Matlab**. [Demo](https://drive.google.com/open?id=1VUYG8pg84g_cW8Nsm24fI5o-Ac1enzce)
+* [Grow Cut Algorithm](cv/grow_cut_segmentation.py) - **Python** implementation of **Grow Cut** - an interactive segmentation algorithm which allows users to input some seeding points. It's wildly used for medical images. Details of algorithm are [here](https://www.graphicon.ru/oldgr/en/publications/text/gc2005vk.pdf).
 * [ViBe](cv/vibe.m) - ViBe is an **background subtrauction algorithm** for videos. Refer to the [original paper](https://orbi.uliege.be/bitstream/2268/145853/1/Barnich2011ViBe.pdf) for more algorithm details. Codes written in **Matlab**.
 
 ![img](_fig/vibe.png)
 
 **3D Slicer**
-* A [3D Slicer module (.py)](cv/ROISegmentation1.py) for segmentation with ROI annotation tool. The ROI annotation tool is used to define the boundary of ROI, and points in ROI are used as seeding points for segmentation.
+* A [3D Slicer module](cv/ROISegmentation1.py) - a loadable **Python**  3D Slicer module for segmentation with ROI annotation tool. The ROI annotation tool is used to define the boundary of ROI, and points in ROI are used as seeding points for segmentation.
 
 ![img](_fig/seg1.png) ![img](_fig/seg2.png)
